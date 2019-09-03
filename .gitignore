@@ -1,0 +1,5 @@
+.docker/apache2/logs
+.docker/mysql/data
+/public/*
+/vendor/*
+/composer.phar

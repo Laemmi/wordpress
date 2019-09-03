@@ -1,0 +1,34 @@
+{
+    "name": "laemmi/wordpress",
+    "description": "wp composer",
+    "type": "project",
+    "require": {
+        "johnpbloch/wordpress": "^5.2",
+        "wpackagist-plugin/disable-json-api": "^1.4",
+        "wpackagist-plugin/wps-hide-login": "1.5.4.2"
+    },
+    "authors": [
+        {
+            "name": "Michael Lämmlein",
+            "email": "laemmi@spacerabbit.de"
+        }
+    ],
+    "minimum-stability": "stable",
+    "extra": {
+        "installer-paths": {
+            "public/wp-content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "public/wp-content/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        },
+        "wordpress-install-dir": "public"
+    },
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+        }
+    ]
+}

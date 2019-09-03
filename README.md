@@ -1,14 +1,20 @@
-# Local development for php/mysql with docker
-
-Simple dev environment
+# Wordpress with composer
 
 ## Start
 `docker-compose up -d`
 
-http://localhost:8080/phpinfo.php
+`docker exec -it wordpress_php_1 /bin/bash`
+
+Install composer (https://getcomposer.org/download/)
+
+`php composer.phar install`
+
+http://localhost:8080/
+
+Enjoy wordpress ;-)
 
 ## Usage
 
 Apache logfiles: .docker/apache/log
 
-Mysql Data: .docker/mysql/data# wordpress
+Mysql Data: .docker/mysql/data
