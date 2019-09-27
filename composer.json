@@ -1,6 +1,6 @@
 {
     "name": "laemmi/wordpress",
-    "description": "wp composer",
+    "description": "wordpress project with composer",
     "type": "project",
     "require": {
         "johnpbloch/wordpress": "^5.2",
